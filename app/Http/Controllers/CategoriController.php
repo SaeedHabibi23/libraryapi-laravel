@@ -31,6 +31,7 @@ class CategoriController extends Controller
     public function showcategori(){
         $Categoriess = Categories::join('libraries' , 'libraries.lib_id' , 'categories.lib_id')
         ->join('users' , 'users.id' , 'categories.id')
+        ->where('categories.id' , '=' , auth()->user()->id)
         ->get();
         return response()->json($Categoriess);
     }

@@ -14,7 +14,7 @@ class Books extends Model
         'book_id' ,
         'book_name' ,
         'Prnityear' ,
-        'N.P' ,
+        'NP' ,
         'buyPrice' ,
         'book_writer' ,
         'cat_id' ,
