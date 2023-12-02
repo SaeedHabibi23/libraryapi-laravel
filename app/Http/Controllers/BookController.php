@@ -56,7 +56,7 @@ class BookController extends Controller
             "cat_id" => "required",
             "id" => "required",
             ]);
-
+// Add Acomect
             $Books->update([
                 'book_name' => $Book['book_name'],
                 'Prnityear' => $Book['Prnityear'],
